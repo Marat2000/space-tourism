@@ -3,7 +3,6 @@ import {AppContext} from '../App'
 
 import data from '../data.json'
 data=data.crew
-const dat=data[0]
 
 const Crew=()=>
 {
