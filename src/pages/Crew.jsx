@@ -40,7 +40,7 @@ setSlider(slider)
 return(
 <>
 <div   onClick={sliderClick } className="sliderOverlay" >
-<Slider  activeIndex={slider}  onSlideComplete={(i)=> sliderSwipe(i) }     >
+<Slider  activeIndex={slider} threshHold={20}  onSlideComplete={(i)=> sliderSwipe(i) }     >
 {empty.map((item)=>{return(
 
 	<div id='react-touch-drag-slider' >{empty.indexOf(item)}</div>
