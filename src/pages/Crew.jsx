@@ -1,8 +1,8 @@
 import {useContext, useState ,useEffect} from 'react'
 import {AppContext} from '../App'
 
-import data from '../data.json'
-data=data.crew
+import datas from '../data.json'
+const {crew:data}=datas
 
 const Crew=()=>
 {
@@ -39,7 +39,7 @@ return(
 <div  className='crewAllInfo'  >
 {data.map(item=>{return(
 
-	<div className='crewInfo' onClick={()=>sliders(item)} style={{ opacity:`${ data.indexOf(item)==slider/-100 ?'1':'0'}`,transform:`translateX(${slider}%)`,    }}>
+	<div key={item.name} className='crewInfo' onClick={()=>sliders(item)} style={{ opacity:`${ data.indexOf(item)==slider/-100 ?'1':'0'}`,transform:`translateX(${slider}%)`,    }}>
 <div className='crewRole'>{item.role}</div>
 <div className='crewName'>{item.name}</div>
 <div className='crewBio'  >{item.bio}</div>
@@ -50,13 +50,13 @@ return(
 <div className='crewPagesCircles'   >
 {data.map(item=>{return(
 
-<div onClick={()=>sliders(item)} className='crewPagesCircle'  style={{  backgroundColor:`${slider/(-100)==data.indexOf(item) ?'white':'#444'}`}} ></div>
+<div key={item.name} onClick={()=>sliders(item)} className='crewPagesCircle'  style={{  backgroundColor:`${slider/(-100)==data.indexOf(item) ?'white':'#444'}`}} ></div>
 )})}
 </div>
 
 <div className='crewAllImgs'>
 {data.map(item=>{return(
-<div onClick={()=>sliders(item)} style={{display:'grid'}} >
+<div key={item.name} onClick={()=>sliders(item)} style={{display:'grid'}} >
 <div className='crewImg'  style={{ opacity:`${ data.indexOf(item)==slider/-100 ?'1':'0'}` ,transform:`translateX(${slider}%)`, backgroundImage:`url(${item.images.webp})`}} ></div>
 </div>
 

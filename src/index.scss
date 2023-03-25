@@ -486,7 +486,24 @@ span
 	background-position: 100%;
 	margin-right: -2vw;
 	height: calc( 100vh - 15rem - 9vw );
+
 }
+
+.technologyImga
+{
+	background-image: url('../public/assets/technology/image-launch-vehicle-portrait.jpg');
+}
+.technologyImgb
+{
+	background-image: url('../public/assets/technology/image-spaceport-portrait.jpg');
+
+}
+.technologyImgc
+{
+	background-image: url('../public/assets/technology/image-space-capsule-portrait.jpg');
+
+}
+
 
 
 .technologyPages
@@ -705,6 +722,23 @@ margin-left: 0;
 	order:1;
 	height: 100%;
 }
+
+
+.technologyImga
+{
+	background-image: url('../public/assets/technology/image-launch-vehicle-landscape.jpg');
+}
+.technologyImgb
+{
+	background-image: url('../public/assets/technology/image-spaceport-landscape.jpg');
+
+}
+.technologyImgc
+{
+	background-image: url('../public/assets/technology/image-space-capsule-landscape.jpg');
+
+}
+
 
 }
 

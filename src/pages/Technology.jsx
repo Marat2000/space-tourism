@@ -1,14 +1,14 @@
 import {useContext} from 'react'
 import {AppContext} from '../App'
 
-import data from '../data.json'
-data=data.technology
+import datas from '../data.json'
+ const {technology:data}=datas
 
 
 const Technology=()=>
 {
 
-const {setPage , tech, setTech}=useContext(AppContext)
+const {setPage , tech, setTech , visibility}=useContext(AppContext)
 setPage(3)
 
 return(
@@ -28,7 +28,7 @@ return(
 <div className='technologyName'>{item.name} </div>
 <div className='technologyDescription'>{item.description}</div>
 </div>
-<div className='technologyImg' style={{backgroundImage:`url(${item.images.portrait})`}} ></div>
+<div className={`technologyImg ${ tech==0? 'technologyImga': tech==1?  'technologyImgb' : tech==2&& 'technologyImgc'}  `} ></div>
 </>
 )})}
 </div>

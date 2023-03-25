@@ -1,8 +1,8 @@
-import data from '../data.json'
+import datas from '../data.json'
 import {useContext} from 'react'
 import {AppContext} from '../App'
 
- data=data.destinations
+const {destinations:data} =datas
 
 const Destination =()=>{
 
