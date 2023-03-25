@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Oswald:wght@300&family=Roboto:wght@300&display=swap');
+
+:root{
+--HeadingFont: 'Bellefair', serif;
+--TextFont:'Roboto', sans-serif;
+--TitleFont:'Oswald', sans-serif;
+--Text:#9dacc2;
+
+
+}
+
+
+
+
+
+*
+ {
+ 	box-sizing: border-box;
+ }
+
+main
+{
+	padding: 7vw;
+	padding-bottom: 0; 
+	box-sizing: border-box;
+	bottom: 0;
+}
+
+html
+{
+	color: white;
+	height:100vh;
+	font-size: 16px;
+
+}
+
+body
+{
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+.back
+{
+	width: 100%;
+	min-height:100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 2vw;
+	padding-bottom: 0;
+
+}
+
+.hamburger
+{
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 2vw;
+	right: 2vw;
+}
+	
+.a
+{
+	background-image: url('../public/assets/home/background-home-desktop.jpg'); 
+}
+
+.b
+{
+	background-image: url('../public/assets/destination/background-destination-desktop.jpg'); 
+}
+.c
+{
+	background-image: url('../public/assets/crew/background-crew-desktop.jpg'); 
+}
+.d
+{
+	background-image: url('../public/assets/technology/background-technology-desktop.jpg'); 
+}
+
+header
+{
+	font-family: var(--TitleFont);
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;	
+	justify-content: space-between;
+
+.logo
+{
+	width: 5vw;
+	height: 5vw;
+}
+
+.menuLine
+{
+	height: 2px;
+	width:  31vw ;
+	opacity: .3;
+	transform: translateX(2vw);
+	background-color: grey;
+	z-index: 15;
+}
+
+
+
+.menu
+{
+	width: 65vw;
+	position: relative;
+	align-items: center;
+	height: 8rem;
+	display: flex;
+	margin-right: -2vw;
+	position: relative;
+	overflow: hidden;
+
+
+.menuItems
+{
+	width: 50vw;
+	margin: 0;
+	height: 3rem;
+	margin-right: 10vw;
+	margin-left: 5vw;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	z-index: 15;
+	font-size: 1.1rem;
+	letter-spacing: .1rem;
+
+.menuNumber
+{
+	font-weight: bold;
+	margin-right: .3rem;
+}
+
+span
+{
+	cursor: pointer;
+
+}
+
+
+
+}
+
+.menuClicked
+{
+	border-bottom: 3px solid white;
+	padding-top: 2.9rem;
+	padding-bottom: 3rem;
+}
+
+
+.menuFon
+{
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: blur(30px) brightness(1.2) contrast(.9);
+	position: absolute;
+	top: -2rem;
+	left:-35vw;
+
+}
+
+
+}
+
+
+}
+
+.container
+{
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	align-items: flex-end;
+	position: relative;
+
+
+	
+
+
+.textPart
+{
+	width:31vw;
+
+
+.title
+{
+	font-family: var(--TitleFont);
+	color:var(--Text);
+	text-transform: uppercase;
+	letter-spacing: .3rem;	
+	margin-bottom: 0;
+}
+
+.heading
+{
+	font-family: var(--HeadingFont);
+	text-transform: uppercase;
+	font-size: 9rem;
+	margin:0;
+	font-weight: normal;
+}
+
+.text
+{
+	font-family: var(--TextFont);
+	font-size: 1.2rem;
+	line-height:  2.5rem;
+	color:var(--Text);
+	font-weight: bold;
+	margin-bottom: 0;
+
+}
+
+
+}
+
+}
+
+.circle
+{
+	font-size: 2rem;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	color: #222;
+	background-color: white;
+	border-radius: 50%;
+	display: grid;
+	place-items:center;
+	width: 15rem;
+	height: 15rem;
+	font-family: var(--HeadingFont);
+	margin:0;
+	margin-top: 0;
+	font-weight: normal;
+}
+
+
+
+
+.cosmicBody
+{
+	list-style: none;
+	padding: none;
+	display: flex;
+	font-family: var(--TitleFont);
+	text-transform: uppercase;
+	justify-content: space-between;
+	color:var(--Text);
+	margin-left: 48%;
+	width: 30%;
+	cursor:pointer;
+
+}
+
+.cosmicBodyClicked
+{
+	color:white;
+	padding-bottom: .6rem;
+	border-bottom:white 3px solid;
+}
+
+
+.destination
+{
+	display:flex ; 
+	justify-content:space-between;
+}
+.destinationImage
+{
+	width: 35%;
+	height: 35%;
+}
+
+.destinationInfo
+{
+	width:48%;
+}
+
+.destinationName
+{
+	font-family: var(--HeadingFont);
+	text-transform: uppercase;
+	font-size: 7rem;
+	margin:0;
+}
+
+.destinationDescription
+{
+	color:var(--Text);
+	font-size: 1.45rem;
+	font-family: var(--TextFont);
+	padding-bottom: 5rem;
+	margin-bottom:4rem;
+	border-bottom: rgba(100,100,100,.3) 2px solid;
+	line-height: 2.5rem;
+}
+
+.destinationDistance, .destinationTravel
+{
+	font-family: var(--HeadingFont) !important;
+	font-size: 2rem !important;
+	margin-right:3.5rem;
+	color:white !important;
+	margin-bottom: 3rem;
+}
+
+.destinationBottomPanel
+{
+	display: flex;
+}
+
+.bottomPanelText
+{
+	color:var(--Text);
+	font-size: 1.2rem;
+	letter-spacing: .3rem;
+	text-transform: uppercase;
+	font-family: var(--TitleFont);
+}
+
+.link
+{
+	color:inherit;
+	text-decoration: none;
+}
+
+
+.crew
+{
+
+	display:flex;
+	height:calc(100vh - 9vw - 11.5rem);
+	
+
+		
+}
+
+.crewAllInfo
+{
+	margin-left: 5vw;
+	display:flex ;
+		 width:42vw ; 
+	 overflow:hidden;
+	 order:2;
+}
+
+.crewInfo
+{
+	width:100%;	
+	text-align:center ;
+	transition:.3s;
+}
+
+.crewRole
+{
+	font-family: var(--HeadingFont);
+	color:#888;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.crewName
+{
+	font-family: var(--HeadingFont);
+	color:white;
+	font-size: 3rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-top:.6rem;
+	margin-bottom: .6rem;
+}
+
+.crewBio
+{
+	color:var(--Text);
+	font-size: 1.3rem;
+	font-family: var(--TextFont);
+	font-weight: bold;
+	line-height: 2.5rem;
+	margin-bottom:1rem;	
+	width: 42vw;
+
+}
+
+
+
+.crewPagesCircles
+{
+		position: absolute;	 
+	  display:flex ;
+	  margin-left:7vw ;
+	  height: 1rem;
+	  order: 1;
+	  margin-top: auto;
+	  margin-bottom: 2rem;
+	  bottom:2vw;
+
+}
+
+.crewPagesCircle
+{
+	 transition:.3s;
+	  z-index:100;
+	   margin-right:1.2rem; 
+	  width:1rem ;
+	  height:1rem ;
+	  border-radius:50%;
+
+}
+
+
+.crewPage *
+{
+	z-index:90;
+	position: relative;
+}
+
+.crewImg
+{
+	  transition:.3s;
+	  width: 42vw;	
+	    background-size:contain ;
+	     background-repeat:no-repeat ;
+	     background-position: 100% 100%;
+	   
+	   
+}
+
+.crewAllImgs
+{
+	 display:flex ;
+	 width:42vw;
+	 overflow:hidden ;
+	 
+  order:3;
+
+	}
+
+.technology
+{
+	display:grid ; 
+	grid-template-columns:1fr 2fr 2fr ;
+
+}
+
+
+
+.technologyTitle
+{
+	font-family: var(--TitleFont);
+	font-size: 1.5rem;
+	letter-spacing: .2rem;
+	color:var(--Text);
+	text-transform: uppercase;
+}
+
+.technologyName
+{
+	font-family: var(--HeadingFont);
+	text-transform: uppercase;
+	font-size: 4rem;
+}
+
+.technologyDescription
+{
+	font-family: var(--TextFont);
+	color:var(--Text);
+	font-size: 1.2rem;
+	line-height: 2.5rem;
+
+}
+.technologyImg
+{
+	background-repeat: no-repeat;
+	background-size: auto 100% ;
+	background-position: 100%;
+	margin-right: -2vw;
+	height: calc( 100vh - 15rem - 9vw );
+}
+
+
+.technologyPages
+{
+	padding: 0;
+	list-style: none;
+	margin-left: 7vw;
+	font-family: var(--HeadingFont);
+
+
+	li
+	{
+		font-size: 2rem;
+		border:#444 solid 2px;
+		border-radius: 50%;
+		width: 4.2rem;
+		height: 4.2rem;
+		display: grid;
+		place-items:center;
+		margin-bottom: 2rem;
+		cursor: pointer;
+
+
+	}
+}
+
+.clickedTechnologyPage
+{
+	background-color: white;
+	color: #222;
+}
+
+
+/****************************************************
+******************************************************
+****************  T A B L E T ***********************/
+
+@media(max-width:800px)
+{
+.a
+{
+	background-image: url('../public/assets/home/background-home-tablet.jpg'); 
+}
+.b
+{
+	background-image: url('../public/assets/destination/background-destination-tablet.jpg'); 
+}
+.c
+{
+	background-image: url('../public/assets/crew/background-crew-tablet.jpg'); 
+}
+.d
+{
+	background-image: url('../public/assets/technology/background-technology-tablet.jpg'); 
+}
+
+
+
+.logo
+{
+	width: 7vw !important;
+	height: 7vw !important;
+}
+
+.menuLine
+{
+	display: none;
+}
+
+main
+{
+	min-height: calc(100vh - 9rem - 2vw);
+}
+
+.container
+{
+	display: grid;
+	place-items:center;
+	height: 100%;
+
+
+.textPart
+{
+	width: 100%;
+	text-align: center;
+
+}
+
+.circle
+{
+	margin-bottom: 0;
+	margin-top: auto;
+
+}
+
+}
+
+.menuNumber
+{
+	display: none; 
+}
+
+.destination
+{
+	display: grid ;
+	width: 100%;
+	place-items:center;
+}
+
+.destinationImage
+{
+	width: 35vw;
+	height: 100%;
+}
+
+.destinationInfo
+{
+	width:100%;
+	text-align: center;
+}
+
+.cosmicBody
+{
+	margin:1rem;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	transform: translateY( calc( 35vw + 5rem ));
+}
+.destinationName
+{
+	margin-top:4rem;
+	font-size: 6rem;
+}
+.destinationBottomPanel
+{
+	justify-content: space-between;
+}
+
+.menuItems
+{
+	font-size: .9rem !important;
+}
+
+.crewBio
+{
+	width: 86vw;
+	font-size: 1.2rem; 
+}
+
+.crew
+{
+	display: grid;
+	grid-template-columns: none; 
+	 grid-template-rows:1fr .2fr 1.5fr !important;
+		place-items:center;
+		 align-items:flex-end;
+}
+
+.crewImg
+{
+	background-position: 50%;
+	 width:86vw;
+}
+.crewInfo
+{
+	width: 100%;
+}
+
+.crewAllInfo
+{
+margin-left: 0;
+	width:86vw;
+	order:1;
+}
+.crewAllImgs
+{
+	height: 100%;
+	width: 86vw;
+	order:3;
+}
+.crewPagesCircles
+{
+	position: relative;
+}
+
+.technology
+{
+	grid-template-columns:none ;
+	grid-template-rows: 4fr 1fr 4fr;
+
+}
+
+.technologyText
+{
+	height: auto;
+	order:3;
+	text-align: center;
+}
+
+.technologyPages
+{
+	display: flex;
+	order:2;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	justify-content: space-around;
+}
+
+.technologyImg
+{
+	background-size: 100vw 100%;
+	margin-right: -2vw;
+	margin-left: -2vw;
+	order:1;
+	height: 100%;
+}
+
+}
+
+/****************************************************
+******************************************************
+****************  M O B I L E ***********************/
+
+@media(max-width:540px)
+{
+.a
+{
+	background-image: url('../public/assets/home/background-home-mobile.jpg'); 
+}
+.b
+{
+	background-image: url('../public/assets/destination/background-destination-mobile.jpg'); 
+}
+.c
+{
+	background-image: url('../public/assets/crew/background-crew-mobile.jpg'); 
+}
+.d
+{
+	background-image: url('../public/assets/technology/background-technology-mobile.jpg'); 
+}
+
+.hamburger
+{
+	visibility: visible;
+	z-index: 2000;
+	opacity: 1;
+}
+
+.logo
+{
+	width: 7vw !important;
+	height: 7vw !important;
+}
+
+.menuLine
+{
+	display: none;
+}
+.menuFon
+{
+	position: relative;
+}
+
+.overlay
+{
+	 position:fixed;
+	  top:0;
+	  left:0 ;
+	  z-index:2000;
+	  height:100vh ;
+	  width:52vw;
+}
+
+.menu
+{
+	z-index: 900;
+	top:0 !important;
+	right:0 !important;
+	position: fixed !important;
+	height: 100vh !important;	
+	display: grid !important;
+	
+	transform: translateX(100%);
+	transition: .2s; 
+	width: 50vw !important;
+}
+
+.hamburgerClicked
+{
+	transform: translateX(0%);
+}
+
+.menuClicked
+{
+	border-bottom: none !important;
+	border-left: 2px white solid;
+	padding: 0 !important;
+	padding-left:2vw !important;
+	margin-left: -2vw !important;
+}
+
+.menuItems
+{
+	
+	height: min-content !important;
+	z-index: 1000;
+	top:0 !important;
+	right:0 !important;
+	position: fixed !important;
+	display: grid !important;
+	margin-right: -2vw !important;
+	margin-top: 40vh !important;
+span
+{
+	margin-bottom: 1vh;
+}
+	
+
+}
+
+main
+{
+	height: calc(100vh - 9rem - 2vw);
+}
+
+.container
+{
+	display: grid;
+	place-items:center;
+	height: 100%;
+
+
+
+.textPart
+{
+	width: 100%;
+	text-align: center;
+	font-size: .5rem;
+.heading
+{
+	font-size: 4rem;
+}
+.text
+{
+	font-size: .9rem;
+	line-height: 1.3rem;
+}
+
+}
+
+}
+
+.destinationName
+{
+	font-size: 4rem;
+}
+
+.destinationDescription , .crewBio , .technologyDescription
+{
+	font-size: .9rem;
+	line-height: 1.3rem;
+}
+
+.destinationBottomPanel
+{
+	display: block ;
+
+}
+
+.destinationBottomPanel *
+{
+	margin: 0;
+	margin-bottom: 1rem;
+}
+.cosmicBody
+{
+	width: 80%;
+}
+
+.crewName
+{
+	font-size: 1.5rem;
+}
+
+.crewRole
+{
+	font-size: 1.8rem;
+}
+
+.crewPagesCircle
+{
+	width: .5rem;
+	height: .5rem;
+}
+
+.crewAllImgs
+{
+	order:1;
+}
+.crewAllInfo
+{
+	margin-top: 0;
+	margin-bottom: auto;
+	order:3;
+}
+.crewPagesCircles
+{
+	height: .5rem;
+	margin-bottom: 0;
+	order:2;
+}
+
+
+.crew
+{
+	height: calc(100vh - 9vw - 7vw - 3.5rem);
+	grid-template-rows: .8fr .05fr 1fr !important;
+} 
+
+.technologyName
+{
+	font-size: 1.8rem;
+}
+.technology
+{
+	grid-template-rows:4fr 1fr 4fr; 
+	height: calc(100vh - 9vw - 7vw - 3.5rem);
+
+}
+.technologyTitle
+{
+	font-size: .8rem;
+}
+
+.technologyPages
+{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+}
+
+
+
