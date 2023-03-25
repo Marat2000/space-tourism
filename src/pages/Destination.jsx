@@ -21,10 +21,12 @@ return(<div style={{padding:'7vw' , paddingBottom:'0'}}>
 <li	onClick={()=>setCosmicBody(3)} className={cosmicBody==3&&'cosmicBodyClicked'}	>Titan	</li> 	
 </ul>
 
+
 {data.filter(el=>data.indexOf(el)==cosmicBody).map((item)=>{return(
 <div key={item.name} className='destination' >
+<div className='destinationImage' >
 <img src={item.images.webp}  className='destinationImage' />
-
+</div>
 <div className='destinationInfo' >
 <div className='destinationName'> {item.name} </div>
 <div className='destinationDescription'>{item.description} </div>
@@ -42,6 +44,7 @@ return(<div style={{padding:'7vw' , paddingBottom:'0'}}>
 </div>
 
 </div>
+
 )})}
 
 	</div>)}
